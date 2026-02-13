@@ -1,5 +1,17 @@
-valor = float(input("Ingrese el valor total de ventas del vendedor: "))
+def act11():
+    print("============================================================")
+    print("Actividad 11")
+    print("============================================================")
+    try:
 
-comm = valor * (5 / 100)
+        valor = float(input("Ingrese el valor total de ventas del vendedor: "))
 
-print("El vendedor debe recibir: ", comm)
+        comm = valor * (5 / 100)
+
+        print("El vendedor debe recibir: ", comm)
+
+    except ValueError:
+        print("Debes ingresar un número válido")
+
+if __name__ == "__main__":
+    act11()
